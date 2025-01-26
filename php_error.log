@@ -1,0 +1,8 @@
+[Sun Jan  5 14:44:50 2025] PHP 8.2.27 Development Server (http://localhost:8000) started
+[Sun Jan  5 14:44:58 2025] [::1]:61753 Accepted
+[Sun Jan  5 14:44:58 2025] [::1]:61754 Accepted
+[Sun Jan  5 14:44:58 2025] [::1]:61753 [500]: GET /
+[Sun Jan  5 14:44:58 2025] [::1]:61753 Closing
+[Sun Jan  5 14:45:06 2025] [::1]:61791 Accepted
+[Sun Jan  5 14:45:06 2025] [::1]:61754 [500]: GET /index.php
+[Sun Jan  5 14:45:06 2025] [::1]:61754 Closing
