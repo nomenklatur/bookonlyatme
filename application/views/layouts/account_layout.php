@@ -9,10 +9,12 @@
 
     <?php slot('meta'); ?>
 
-    <title><?= vars('page_title') ?? lang('account') ?> | Easy!Appointments</title>
+    <title><?= vars('page_title') ?? lang('account') ?></title>
 
-    <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
-    <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">
+    <!-- <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
+    <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>"> -->
+    <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/bookonlyatme-favicon.png') ?>">
+
 
     <link rel="stylesheet" type="text/css"
           href="<?= asset_url('assets/css/themes/' . setting('theme', 'default') . '.css') ?>">
