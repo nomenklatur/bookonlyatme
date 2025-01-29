@@ -1,3 +1,5 @@
 config.php
 .vscode
 storage/*
+node_modules
+package-lock.json

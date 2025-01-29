@@ -1,0 +1,18 @@
+{
+  "name": "bookonlyatme",
+  "version": "1.0.0",
+  "description": "Schdelule your book only at me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./assets/css/tailwind.css -o ./assets/css/built_tailwind.css --watch",
+    "dev": "/opt/homebrew/opt/php@8.2/bin/php -S localhost:8000 -t ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

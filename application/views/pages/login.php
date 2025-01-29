@@ -24,6 +24,7 @@
     </div>
 
     <div class="mb-5">
+        <p class="text-green-500 font-bold">Hallowww</p>
         <label for="password" class="form-label">
             <?= lang('password') ?>
         </label>
