@@ -38,8 +38,8 @@ window.App.Utils.Message = (function () {
         if (!buttons) {
             buttons = [
                 {
-                    text: lang('close'),
-                    className: 'btn btn-outline-primary',
+                    text: 'Tutup',
+                    className: 'bg-gray-200 rounded-lg px-4 py-2 cursor-pointer',
                     click: function (event, messageModal) {
                         messageModal.hide();
                     },

@@ -10,19 +10,20 @@
     <?php slot('meta'); ?>
     <title><?= vars('page_title') ?? lang('account') ?></title>
     <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/bookonlyatme-favicon.png') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/built_custom.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/built_tailwind.css') ?>">
 
     <?php slot('styles'); ?>
 </head>
 <body>
-<div id="login-frame" class="frame-container">
+<div id="login-frame">
 
     <?php slot('content'); ?>
 
-    <div class="mt-4">
+    <div class="mt-2 text-center">
         <small>
-            Powered by
-            <a href="https://easyappointments.org">Easy!Appointments</a>
+            Created by
+            <a href="https://www.linkedin.com/in/masdimasekaputra/" class="text-blue-400">Dimas Eka Putra</a>
         </small>
     </div>
 </div>
