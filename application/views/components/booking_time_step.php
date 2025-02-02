@@ -19,7 +19,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <div id="select-time">
+                <div id="select-time" class="h-10 overflow-scroll">
                     <div class="mb-3">
                         <label for="select-timezone" class="form-label">
                             <?= lang('timezone') ?>
@@ -33,7 +33,8 @@
                     <?php slot('after_select_timezone'); ?>
                     
 
-                    <div id="available-hours"></div>
+                    <div id="available-hours">
+                    </div>
 
                     <?php slot('after_available_hours'); ?>
                 </div>

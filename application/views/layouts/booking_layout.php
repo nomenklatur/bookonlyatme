@@ -23,9 +23,11 @@
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/vendor/cookieconsent/cookieconsent.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/vendor/flatpickr/flatpickr.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/vendor/flatpickr/material_green.min.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/themes/' . vars('theme') . '.css') ?>">
+    <!-- <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/themes/' . vars('theme') . '.css') ?>"> -->
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/general.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/layouts/booking_layout.css') ?>">
+    <!-- <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/layouts/booking_layout.css') ?>"> -->
+    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/built_custom.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/built_tailwind.css') ?>">
 
     <?php component('company_color_style', ['company_color' => vars('company_color')]); ?>
 
@@ -33,9 +35,9 @@
 </head>
 
 <body>
-<div id="main" class="container">
-    <div class="row wrapper">
-        <div id="book-appointment-wizard" class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+<div id="main" class="h-[95vh] w-full flex justify-center items-center">
+    <div class="p-4 rounded-xl shadow-lg w-full md:w-1/2 lg:w-1/3 m-2">
+        <div id="book-appointment-wizard">
 
             <?php component('booking_header', [
                 'company_name' => vars('company_name'),
@@ -44,25 +46,15 @@
 
             <?php slot('content'); ?>
 
-            <?php component('booking_footer', ['display_login_button' => vars('display_login_button')]); ?>
-
         </div>
     </div>
 </div>
-
-<?php if (vars('display_cookie_notice') === '1'): ?>
-    <?php component('cookie_notice_modal', ['cookie_notice_content' => vars('cookie_notice_content')]); ?>
-<?php endif; ?>
-
-<?php if (vars('display_terms_and_conditions') === '1'): ?>
-    <?php component('terms_and_conditions_modal', [
-        'terms_and_conditions_content' => vars('terms_and_conditions_content'),
-    ]); ?>
-<?php endif; ?>
-
-<?php if (vars('display_privacy_policy') === '1'): ?>
-    <?php component('privacy_policy_modal', ['privacy_policy_content' => vars('privacy_policy_content')]); ?>
-<?php endif; ?>
+<div class="mt-2 text-center">
+    <small>
+        Created by
+        <a href="https://www.linkedin.com/in/masdimasekaputra/" class="text-blue-400">Dimas Eka Putra</a>
+    </small>
+</div>
 
 <script src="<?= asset_url('assets/vendor/jquery/jquery.min.js') ?>"></script>
 <script src="<?= asset_url('assets/vendor/cookieconsent/cookieconsent.min.js') ?>"></script>

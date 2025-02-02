@@ -6,41 +6,30 @@
  */
 ?>
 
-<div id="header">
-    <div id="company-name">
-        <img src="<?= vars('company_logo') ?: base_url('assets/img/logo.png') ?>" alt="logo" id="company-logo">
-
-        <span>
-            <?= e($company_name) ?>
-        </span>
-
-        <div class="d-flex justify-content-center justify-content-md-start">
-            <span class="display-selected-service me-1 pe-1 border-end invisible">
-                <?= lang('service') ?>
-            </span>
-            <span class="display-selected-provider invisible">
-                <?= lang('provider') ?>
-            </span>
+<div id="header" class="bg-transparent">
+    <div class="mb-2">
+        <div class="flex flex-col gap-2 items-center justify-center">
+            <img src="<?= base_url('assets/img/bookonlyatme-favicon.png') ?>" alt="Book Only at Me!" width="80">
+            <h1 class="text-2xl font-semibold">Book Only at Me!</h1>
+            <p class="text-md text-center text-gray-400">Atur Janji Temu dengan Mudah dan Cepat.</p>
         </div>
     </div>
+       
+    <div class="flex justify-center mb-4">
+        <span class="display-selected-service me-1 invisible">
+            <?= lang('service') ?>
+        </span>
+        <span class="display-selected-provider invisible">
+            <?= lang('provider') ?>
+        </span>
+    </div>
 
-    <div id="steps">
-        <div id="step-1" class="book-step active-step"
-             data-tippy-content="<?= lang('service_and_provider') ?>">
-            <strong>1</strong>
-        </div>
-
-        <div id="step-2" class="book-step" data-bs-toggle="tooltip"
-             data-tippy-content="<?= lang('appointment_date_and_time') ?>">
-            <strong>2</strong>
-        </div>
-        <div id="step-3" class="book-step" data-bs-toggle="tooltip"
-             data-tippy-content="<?= lang('customer_information') ?>">
-            <strong>3</strong>
-        </div>
-        <div id="step-4" class="book-step" data-bs-toggle="tooltip"
-             data-tippy-content="<?= lang('appointment_confirmation') ?>">
-            <strong>4</strong>
-        </div>
+    <div id="steps" class="flex gap-2 justify-center">
+        <div id="step-1" class="bg-yellow-400 current-step h-2 w-10 rounded-2xl"></div>
+        <div id="step-2" class="bg-gray-300 h-2 w-10 rounded-2xl"></div>
+        <div id="step-3" class="bg-gray-300 h-2 w-10 rounded-2xl"></div>
+        <div id="step-4" class="bg-gray-300 h-2 w-10 rounded-2xl"`></div>
     </div>
 </div>
+
+    

@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 // English
 $lang['page_title'] = 'Book Appointment With';
-$lang['service_and_provider'] = 'Service & Provider';
+$lang['service_and_provider'] = 'Layanan & Mitra';
 $lang['select_service'] = 'Select Service';
 $lang['select_provider'] = 'Select Provider';
-$lang['duration'] = 'Duration';
-$lang['minutes'] = 'Minutes';
-$lang['price'] = 'Price';
-$lang['back'] = 'Back';
+$lang['duration'] = 'Durasi';
+$lang['minutes'] = 'Menit';
+$lang['price'] = 'Harga';
+$lang['back'] = 'Kembali';
 $lang['appointment_date_and_time'] = 'Appointment Date & Time';
 $lang['no_available_hours'] = 'There are no available appointment hours for the selected date. Please choose another date.';
 $lang['appointment_hour_missing'] = 'Please select an appointment hour before continuing.';
@@ -273,7 +273,7 @@ $lang['ea_update_success'] = 'Easy!Appointments has been successfully updated.';
 $lang['require_captcha'] = 'Require CAPTCHA';
 $lang['require_captcha_hint'] = 'When enabled, the customers will have to type a random generated CAPTCHA string before booking/updating an appointment.';
 $lang['captcha_is_wrong'] = 'CAPTCHA verification failed, please try again.';
-$lang['any_provider'] = 'Any Provider';
+$lang['any_provider'] = 'Mitra pilihan kami';
 $lang['requested_hour_is_unavailable'] = 'The requested appointment is unfortunately not available. Please select a different hour for your appointment.';
 $lang['customer_notifications'] = 'Customer Notifications';
 $lang['customer_notifications_hint'] = 'Defines whether the customer will receive email notifications whenever there is a schedule change on one of his appointments.';
@@ -482,5 +482,5 @@ $lang['customer_is_already_booked'] = 'This customer already has an appointment 
 $lang['fields'] = 'Fields';
 $lang['invalid_credentials_provided'] = 'Email atau Password tidak sesuai.';
 $lang['calendar_url'] = 'Calendar URL';
-$lang['please_select'] = 'Please Select';
+$lang['please_select'] = 'Silahkan Pilih';
 // End

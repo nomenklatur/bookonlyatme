@@ -433,22 +433,27 @@ body .clearfix {
 
 .flatpickr-calendar {
   box-shadow: none;
+  border-radius: 15px;
+  padding: 2px;
+  border: 2px solid #333;
 }
 .flatpickr-calendar .flatpickr-monthDropdown-months:hover {
   background: rgba(0, 0, 0, 0.05) !important;
 }
 .flatpickr-calendar .flatpickr-months {
   padding: 10px 0;
-  background: #449a82;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  background: transparent;
+  color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .flatpickr-calendar .flatpickr-current-month {
   padding: 3px;
+  color: black;
 }
 .flatpickr-calendar .flatpickr-innerContainer {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .flatpickr-calendar .dayContainer {
   padding: 10px 0;
@@ -457,8 +462,8 @@ body .clearfix {
 .flatpickr-calendar .flatpickr-weekdays,
 .flatpickr-calendar .flatpickr-current-month .flatpickr-monthDropdown-months,
 .flatpickr-calendar span.flatpickr-weekday {
-  background: #429a82;
-  color: white;
+  background: transparent;
+  color: black;
 }
 .flatpickr-calendar .flatpickr-day.endRange,
 .flatpickr-calendar .flatpickr-day.endRange.inRange,

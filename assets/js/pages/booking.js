@@ -432,8 +432,8 @@ App.Pages.Booking = (function () {
                 .parents()
                 .eq(1)
                 .fadeOut(() => {
-                    $('.active-step').removeClass('active-step');
-                    $('#step-' + nextTabIndex).addClass('active-step');
+                    $('.current-step').removeClass('current-step');
+                    $('#step-' + nextTabIndex).removeClass('bg-gray-300').addClass('bg-yellow-400 current-step');
                     $('#wizard-frame-' + nextTabIndex).fadeIn();
                 });
 
@@ -457,8 +457,8 @@ App.Pages.Booking = (function () {
                 .parents()
                 .eq(1)
                 .fadeOut(() => {
-                    $('.active-step').removeClass('active-step');
-                    $('#step-' + prevTabIndex).addClass('active-step');
+                    $('.current-step').removeClass('bg-yellow-400 current-step').addClass('bg-gray-300');
+                    $('#step-' + prevTabIndex).addClass('current-step');
                     $('#wizard-frame-' + prevTabIndex).fadeIn();
                 });
         });
@@ -644,10 +644,10 @@ App.Pages.Booking = (function () {
      * customer settings and input for the appointment booking.
      */
     function updateConfirmFrame() {
-        const serviceOptionText = $selectService.find('option:selected').text();
+        const serviceOptionText = $selectService.find('option:selected').text().indexOf(lang('please_select')) > 0 ? "" : $selectService.find('option:selected').text();
         $('.display-selected-service').text(serviceOptionText).removeClass('invisible');
 
-        const providerOptionText = $selectProvider.find('option:selected').text();
+        const providerOptionText = $selectProvider.find('option:selected').text() === lang('please_select')? "" : "dengan " + $selectProvider.find('option:selected').text();
         $('.display-selected-provider').text(providerOptionText).removeClass('invisible');
 
         if (!$availableHours.find('.selected-hour').text()) {
@@ -912,7 +912,13 @@ App.Pages.Booking = (function () {
         }
 
         if (Number(service.price) > 0) {
-            additionalInfoParts.push(`${lang('price')}: ${Number(service.price).toFixed(2)} ${service.currency}`);
+            additionalInfoParts.push(`${lang('price')}: ${Number(service.price).toLocaleString('id-ID', {
+                currency: 'IDR',
+                style: 'currency',
+                currencyDisplay: 'symbol',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+            })}`);
         }
 
         if (service.location) {
