@@ -1,4 +1,5 @@
 config.php
+!application/config/config.php
 .vscode
 storage/*
 node_modules
